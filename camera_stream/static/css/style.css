@@ -1,0 +1,108 @@
+:root{
+  --bar-height: 60px;
+  --bg-black: #333333;
+  --bg-gray-light: #fffff8;
+  --bg-gray: #c7c7c7;
+  --bg-purple: #ffeefd;
+  --cl-blue-dark: #004A85;
+  --cl-blue-light: #00ADE8;
+  --text-gray: #fff; 
+  --text-purple-light: #e6ddd6; 
+}
+
+* {
+  margin: 0;
+  padding: 0; 
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  background: radial-gradient(
+    var(--bg-purple),
+    var(--bg-purple),
+    var(--bg-purple),
+     #9198e5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ------- Header style ------- */
+header {
+  background: var(--bg-black);
+  height: var(--bar-height);
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+header div {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- Main container style ----- */
+main {
+  /*background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgb(200,200,200, 0.2) 10px,
+    rgb(200,200,200, 0.2) 20px
+  );*/
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ------- Footer style ------- */
+footer {
+  background: var(--bg-black);
+  height: 60px;
+  font-size: 24px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* ------- Section style ------- */
+section {
+  max-width: 400px;
+  min-width: 300px;
+  width: 50%;
+  height: 450px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--bg-gray-light);
+  border: 3px solid var(--cl-blue-dark);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  
+}
+
+section.tiny {
+  height: 250px;  
+}

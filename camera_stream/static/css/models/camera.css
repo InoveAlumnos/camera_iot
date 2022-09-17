@@ -1,0 +1,84 @@
+/* https://www.digitalocean.com/community/tutorials/front-and-rear-camera-access-with-javascripts-getusermedia-es */
+
+
+.display-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 416px;
+  height: 416px;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+}
+
+.video-options {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+.controls {
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+
+}
+
+.controls > button {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 100%;
+  margin: 5px 0;
+  background: transparent;
+
+
+}
+.controls > button > svg {
+  /* height: 20px;
+  width: 18px; */
+  height: 70%;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px;
+}
+.controls > button >svg:hover {
+  color: white !important;
+}
+
+.controls button:nth-child(1) {
+  border: 2px solid #D2002E;
+
+}
+.controls button:nth-child(1) > svg {
+  color: #D2002E;
+}
+
+.controls button:nth-child(2) {
+  border: 2px solid #008496;
+
+ }
+.controls button:nth-child(2) > svg {
+  color: #008496;
+}
+
+.controls button:nth-child(3) {
+  border: 2px solid #00B541;
+}
+.controls button:nth-child(3) > svg {
+  color: #00B541;
+}
+.controls button:nth-child(4) {
+  border: 2px solid #00B541;
+}
+.controls button:nth-child(4) > svg {
+  color: #00B541;
+}
