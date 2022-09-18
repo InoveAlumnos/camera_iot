@@ -1,0 +1,24 @@
+/* https://www.digitalocean.com/community/tutorials/front-and-rear-camera-access-with-javascripts-getusermedia-es */
+
+
+.display-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 416px;
+  height: 416px;
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.video-options {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+
