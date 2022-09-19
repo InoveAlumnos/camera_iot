@@ -23,7 +23,7 @@ ctx.closePath();
 
 // ---- MQTT Websockets ----
 
-const client = new Paho.MQTT.Client("localhost", 9001, "iotcameracapture");
+const client = new Paho.MQTT.Client(document.location.hostname, 9001, "iotcameracapture");
 
 // set callback handlers
 function onConnect() {
