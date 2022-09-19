@@ -14,6 +14,10 @@ __IMPORTANTE__: La aplicación se desarrollo con certificados SSL no verificados
 https://<ip_host_flask>:5020
 ```
 
+__IMPORTANTE__: Es indispensable que permita al explorador acceder a la cámara del dispositivo. En caso de que el explorador esté bloqueando el acceso, puede habilitarlo desde el ícono que aparece en la barra de navegación:
+
+![activar_camara](activar_camara.jpg)
+
 # Pre-requisitos 📋
 Para poder ejecutar esta aplicación, será necesario tener instalada la versión 3.7 de Python o superior.\
 Instale las librerias que se comentan en requirements.txt
