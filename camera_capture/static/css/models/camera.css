@@ -8,6 +8,7 @@
   width: 416px;
   height: 416px;
   position: relative;
+  border-style: solid;
 }
 
 canvas {
