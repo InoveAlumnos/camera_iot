@@ -3,3 +3,4 @@ flask==2.0.3
 Flask-SocketIO==5.1.1
 pyOpenSSL==22.0.0
 paho-mqtt==1.6.1
+Werkzeug==2.2.2
