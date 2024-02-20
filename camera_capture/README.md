@@ -6,6 +6,14 @@ Este es un proyecto realizado por miembros de inove como un servicio para incorp
 
 ![logotipo](sistema.jpg)
 
+### Configuración de Mosquitto websockets
+Debemos configurar el servidor de mosquitto para soportar el uso de websockets:
+```sh
+$ sudo touch /etc/mosquitto/conf.d/mosquitto.conf
+$ echo -e "allow_anonymous true\nlistener 1883 0.0.0.0\nallow_anonymous true\nlistener 9001\nprotocol websockets" | sudo tee /etc/mosquitto/conf.d/mosquitto.conf
+$ sudo service mosquitto restart
+```
+
 # Comenzando 🚀
 El objetivo de este proyecto es dar un ejemplo de aplicación de Python en la generación de imagenes y videos utilizando el celular. Este proyecto se basa en tomar la telemetría generada y compartir dicha información por mqtt.
 

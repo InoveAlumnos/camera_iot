@@ -4,6 +4,14 @@ En este repositorio encontrará dos carpetas:
 - camera_stream --> programa para capturar la cámara del dispositivo (PC o celular) y transmitir cada los datos por MQTT (stream de video)
 - camera_capture --> programa que captura los datos provenientes de MQTT (stream de video) y los renderiza en el explorador
 
+### Configuración de Mosquitto websockets
+Debemos configurar el servidor de mosquitto para soportar el uso de websockets:
+```sh
+$ sudo touch /etc/mosquitto/conf.d/mosquitto.conf
+$ echo -e "allow_anonymous true\nlistener 1883 0.0.0.0\nallow_anonymous true\nlistener 9001\nprotocol websockets" | sudo tee /etc/mosquitto/conf.d/mosquitto.conf
+$ sudo service mosquitto restart
+```
+
 ### Lanazar docker con ambos sistemas
 Para lenvatar ambos sistemas ejecutar:
 ```sh
